@@ -1,6 +1,6 @@
 interface AlertDetail {
   id: string
-  kpi: string
+  kpiName: string
   severity: 'red' | 'yellow'
   message: string
   timestamp: string
@@ -42,7 +42,7 @@ export default function SidePanel({ isOpen, alert, onClose, onNavigateToAICenter
                   {alert.severity === 'red' ? 'Critical' : 'Warning'}
                 </span>
               </div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-2 tracking-tight">{alert.kpi}</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-2 tracking-tight">{alert.kpiName}</h2>
               <p className="text-sm text-gray-600 leading-relaxed">{alert.message}</p>
               <p className="text-xs text-gray-400 mt-2">{new Date(alert.timestamp).toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' })}</p>
             </div>

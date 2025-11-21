@@ -226,7 +226,7 @@ const navBlocks = [
 // Alert details for side panel
 interface AlertDetail {
   id: string
-  kpi: string
+  kpiName: string
   severity: 'red' | 'yellow'
   message: string
   timestamp: string
@@ -239,7 +239,7 @@ interface AlertDetail {
 const alertDetails: Record<string, AlertDetail> = {
   'alert-1': {
     id: 'alert-1',
-    kpi: 'Conversion Rate',
+    kpiName: 'Conversion Rate',
     severity: 'red',
     message: 'Conversion Rate dropped -0.3pp in TVs category',
     timestamp: '2025-11-18T10:30:00Z',
@@ -261,7 +261,7 @@ const alertDetails: Record<string, AlertDetail> = {
   },
   'alert-2': {
     id: 'alert-2',
-    kpi: 'Gross Margin %',
+    kpiName: 'Gross Margin %',
     severity: 'yellow',
     message: 'Electronics margin pressure: -1.8pp in last 7 days',
     timestamp: '2025-11-18T09:15:00Z',
@@ -284,7 +284,7 @@ const alertDetails: Record<string, AlertDetail> = {
   },
   'alert-3': {
     id: 'alert-3',
-    kpi: 'Stock Availability',
+    kpiName: 'Stock Availability',
     severity: 'yellow',
     message: 'Top 10 SKUs showing stockout risk within 14 days',
     timestamp: '2025-11-18T08:00:00Z',

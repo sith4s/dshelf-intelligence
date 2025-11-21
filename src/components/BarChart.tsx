@@ -5,7 +5,7 @@ interface BarChartProps {
   title: string
 }
 
-export default function BarChart({ data, height = 300, color = '#3b82f6', title }: BarChartProps) {
+export default function BarChart({ data, color = '#3b82f6', title }: BarChartProps) {
   const maxValue = Math.max(...data.map(d => d.value))
 
   return (

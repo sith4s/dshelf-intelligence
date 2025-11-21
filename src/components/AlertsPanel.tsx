@@ -2,7 +2,7 @@ import AlertItem from './AlertItem'
 
 interface Alert {
   id: string
-  kpi: string
+  kpiName: string
   severity: 'red' | 'yellow'
   message: string
   timestamp: string
