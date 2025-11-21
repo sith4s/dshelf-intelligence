@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <div className="flex min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="flex min-h-screen bg-linear-to-br from-gray-50 to-gray-100">
       <Sidebar currentPage={currentPage} onNavigate={setCurrentPage} />
       <main className="flex-1 ml-64 p-10">
         {renderPage()}

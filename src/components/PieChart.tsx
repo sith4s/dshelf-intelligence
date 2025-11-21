@@ -42,7 +42,7 @@ export default function PieChart({ data, title, size = 200 }: PieChartProps) {
       
       <div className="flex items-center gap-8">
         {/* Pie chart */}
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="drop-shadow-sm">
             {segments.map((segment, index) => (
               <path
@@ -63,7 +63,7 @@ export default function PieChart({ data, title, size = 200 }: PieChartProps) {
             <div key={index} className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div
-                  className="w-4 h-4 rounded-sm flex-shrink-0"
+                  className="w-4 h-4 rounded-sm shrink-0"
                   style={{ backgroundColor: item.color }}
                 />
                 <span className="text-sm font-medium text-gray-700">{item.label}</span>

@@ -26,7 +26,7 @@ export default function InsightCard({ type, title, description, indicator, onCli
       style={{ boxShadow: '0 1px 3px rgba(0, 0, 0, 0.04)' }}
     >
       <div className="flex items-start gap-4">
-        <div className={`w-2 h-2 rounded-full mt-1.5 flex-shrink-0 ${getIndicatorColor()}`}></div>
+        <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${getIndicatorColor()}`}></div>
         <div className="flex-1">
           <div className={`inline-block text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded-md mb-3 ${getTypeColor()}`}>
             {type}
